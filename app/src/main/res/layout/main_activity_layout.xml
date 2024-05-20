@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cosmocanyon_background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/leftConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageButton
+            android:id="@+id/audioButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/audio_on"
+            android:contentDescription="@string/audio_button_content_description"
+            android:onClick="manageAudio"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintLeft_toRightOf="@id/audioButton"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/highscore"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="35dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rightConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/exit"
+            android:contentDescription="@string/exit_button_content_description"
+            android:onClick="exitGame"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="208dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/start"
+        android:contentDescription="@string/start_button_content_description"
+        android:onClick="startGame"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/helpButton"
+        android:layout_width="208dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/help"
+        android:contentDescription="@string/help_button_content_description"
+        android:onClick="popupHelp"
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/game_logo"
+        android:layout_width="208dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/game_logo"
+        android:contentDescription="@string/game_logo_content_description"
+        android:clickable="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

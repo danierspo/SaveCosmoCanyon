@@ -1,0 +1,32 @@
+{
+	"state": [
+		{
+			"name": "wait",
+			"action": "waited"
+		},
+		{
+			"name": "push",
+			"action": "pushed"
+		}
+	],
+
+	"transition": [
+		{
+			"from":"wait",
+			"to":"push",
+			"action":"pushed"
+		},
+		{
+			"from":"push",
+			"to":"wait",
+			"action":"pushed"
+		},
+		{
+			"from":"push",
+			"to":"push",
+			"action":"pushed"
+		}
+	],
+
+	"initial_state": "wait"
+}

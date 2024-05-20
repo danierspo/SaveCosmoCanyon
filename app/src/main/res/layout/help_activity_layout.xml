@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="@drawable/game_screenshot">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/hintsContainer"
+        android:textColor="@color/meteor_endcolor"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:scrollbars="vertical"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/hintsContainer"
+        app:layout_constraintRight_toRightOf="@id/hintsContainer"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/previousButton"
+        android:onClick="previousHint"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:soundEffectsEnabled="false"
+        android:background="@drawable/previous"
+        android:contentDescription="@string/previous_button_content_description"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/hintsContainer"
+        app:layout_constraintRight_toRightOf="@id/hintsContainer"
+        android:id="@+id/nextButton"
+        android:onClick="nextHint"
+        android:soundEffectsEnabled="false"
+        android:background="@drawable/next"
+        android:contentDescription="@string/next_button_content_description"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/leftConstraintLayout"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rightConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home"
+            android:contentDescription="@string/home_button_content_description"
+            android:onClick="home"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/helpAudioButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/audio_on"
+            android:contentDescription="@string/audio_button_content_description"
+            android:onClick="manageAudio"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/homeButton"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

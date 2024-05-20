@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Save Cosmo Canyon</string>
+
+    <string name="game_activity_name">GameActivity</string>
+    <string name="help_activity_name">HelpActivity</string>
+
+    <string name="audio_button_content_description">Audio button</string>
+    <string name="exit_button_content_description">Exit button</string>
+    <string name="help_button_content_description">Help button</string>
+    <string name="start_button_content_description">Start button</string>
+    <string name="home_button_content_description">Home button</string>
+    <string name="next_button_content_description">Next button</string>
+    <string name="previous_button_content_description">Previous button</string>
+    <string name="pause_button_content_description">Pause button</string>
+    <string name="scraper_content_description">Scraper image</string>
+    <string name="meteor_content_description">Meteor image</string>
+    <string name="game_logo_content_description">Game logo image</string>
+
+    <string name="highscore">Highscore: %1$d</string>
+</resources>
