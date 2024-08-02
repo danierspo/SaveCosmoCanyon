@@ -1,6 +1,8 @@
 # SaveCosmoCanyon
 Development of an Android videogame using a Java porting of LiquidFun, an extension of Box2D,  a 2-dimensional physics simulator engine.
 
+![SaveCosmoCanyon](https://github.com/user-attachments/assets/5624a650-5038-41c7-98ae-edc2974b2772)
+
 ### How to play the game
 This project comes with a simple APK file, "savecosmocanyon.apk", that you can easily find on top of this repository. Simply download this file on an Android phone and install the application.
 
